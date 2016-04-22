@@ -3,7 +3,7 @@
 
 #-----------------------------------
 ## simple 3d scanner 
-## 2016/04 - I am beginner, but it works ;-)
+## 2016/04 - I am beginner, but it works ;-) test helper?
 ## 0.2 create xyz point cloud - directly posible import to MeshLab
 ##----------------------------------
 import os, math, pygame, time
