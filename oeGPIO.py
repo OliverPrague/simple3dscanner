@@ -8,6 +8,10 @@ import time
 from time import sleep
 import RPi.GPIO as GPIO # for step motor
 
+EN1 = 22
+DIR1 = 27
+STEP1 = 17
+
 EN2 = 22
 DIR2 = 27
 STEP2 = 17
