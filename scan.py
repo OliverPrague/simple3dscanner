@@ -170,7 +170,7 @@ def oneScan(angleStep): #=angle
          cR1 = screen.get_at((width-x-1,y))[0]
          cR2 = screen.get_at((width-x-2,y))[0]
          #cR3 = screen.get_at((width-x-5,y))[0]
-         if cR1>cR: 
+         if cR1>cR:  #todo1
             x=x-1
             if cR2>cR1:
                x=x-1
@@ -202,7 +202,7 @@ def oneScan(angleStep): #=angle
     while y<height-sBott-2:   #---filter1---to sVec      
         d = sMat[y-sTop][angleStep]
         #if d == 0:
-        if (sMat[y-sTop-1][angleStep]+sMat[y-sTop+1][angleStep])>0: 
+        if (sMat[y-sTop-1][angleStep]+sMat[y-sTop+1][angleStep])>0: #todo2
           #mathematical average of the surrounding pixels
           d = (sMat[y-sTop-1][angleStep]+sMat[y-sTop][angleStep]+sMat[y-sTop+1][angleStep])/3 
           #d = (sMat[y-sTop-2][angleStep]+sMat[y-sTop-1][angleStep]+sMat[y-sTop][angleStep]+sMat[y-sTop+1][angleStep]+sMat[y-sTop+2][angleStep])/5   
